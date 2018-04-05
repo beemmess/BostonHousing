@@ -12417,8 +12417,9 @@ With unseen data, I would say max depth of 4 is the best for validation score. t
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong>
-In Grid Search, a parameter sweep, is a search through a manually specified subset of the parameter of a learning algorithm. It will optimize a learning algorithm and evaluate a model for each of the combination of a algorithm parameters that is specified in a grid.</p>
+<p><strong>Answer: </strong></p>
+<p>In Grid Search, a parameter sweep, is a search through a manually specified subset of hyperparameter space of a learning algorithm. Learning algorithm is optimized and evaluates a model for each of the combination of a algorithm parameters that is specified in a grid.</p>
+<p>For example configure the max depth value to get the lowest variance and bias, this is achived by using grid search by trying out different values of max-depth.</p>
 
 </div>
 </div>
@@ -12444,8 +12445,9 @@ In Grid Search, a parameter sweep, is a search through a manually specified subs
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong>
-The original sample is randomly partitioned into k equal sized subsamples, a single subsample is retained as the validation data for the testing model then the remaining k-1 subsamples are used as training data.</p>
-<p>This technique benefits the grid search as a k number of compination can be used with grid search, as we can run each permutation of a grid search with k different partition.</p>
+The sample is randomly partitioned into k equal sized subsamples; a single subsample is kept as the validation data for the testing model then the remaining k-1 subsamples are used as training data.</p>
+<p>This technique benefits the grid search as a k number of combination can be used with grid search, as we can run each permutation of a grid search with k different partition.</p>
+<p>The k results can then be averaged to compute a single estimation. A significant benefit using k-fold with Grid Search is to give the best potential learning results and validation with a perhaps limited data set.</p>
 
 </div>
 </div>
